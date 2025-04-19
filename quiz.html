@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Time</title>
+    <link rel="stylesheet" href="quiz.css" />
+    <script type="module" src="quiz.js" defer></script>
+  </head>
+  <body>
+    <div class="quiz-container">
+      <div id="questionBox">
+        <h2 id="questionText">Question comes here</h2>
+        <ul id="optionsList"></ul>
+        <div id="feedback"></div>
+      </div>
+
+      <div class="quiz-footer">
+        <span id="timer">Time left: <strong>10</strong> sec</span>
+        <button id="nextBtn">Next</button>
+      </div>
+    </div>
+    <div class="result-box hidden">
+      <h2>Quiz Finished!</h2>
+      <p>Your Score: <span id="finalScore"></span></p>
+      <button onclick="location.reload()">Try Again</button>
+      <a href="dashboard.html">Back to Dashboard</a>
+    </div>
+  </body>
+</html>
